@@ -1,2 +1,2 @@
 # currency-java
-Currency converter, USD to EUR and EUR to USD
+Currency converter, USD to EUR and EUR to USD.
