@@ -23,17 +23,20 @@ public class window extends JFrame {
         setTitle("Currency Converter");
         setLayout(new GridBagLayout());
 
+        //left components
         GridBagConstraints left1 = new GridBagConstraints();
         left1.gridx = 0;
         left1.gridy = 0;
         left1.insets = new Insets(10, 10, 10, 10);
         usd = new JLabel("USD");
 
+        //second set of left components
         GridBagConstraints left2 = new GridBagConstraints();
         left2.gridx = 0;
         left2.gridy = 1;
         input1 = new JTextField(10);
 
+        //middle components
         GridBagConstraints middle1 = new GridBagConstraints();
         middle1.gridx = 1;
         middle1.gridy = 1;
@@ -43,7 +46,7 @@ public class window extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                
                 double d1 = Double.parseDouble(input1.getText());
 
                 double sum = (d1 * (.82));
@@ -52,6 +55,7 @@ public class window extends JFrame {
             }
         });
 
+        //second set of middle components
         GridBagConstraints middle2 = new GridBagConstraints();
         middle2.gridx = 1;
         middle2.gridy = 2;
@@ -69,6 +73,7 @@ public class window extends JFrame {
             }
         });
 
+        //third set of middle components 
         GridBagConstraints middle3 = new GridBagConstraints();
         middle3.gridx = 1;
         middle3.gridy = 3;
@@ -83,16 +88,19 @@ public class window extends JFrame {
             }
         });
 
+        //right components
         GridBagConstraints right1 = new GridBagConstraints();
         right1.gridx = 2;
         right1.gridy = 0;
         eur = new JLabel("EUR");
 
+        //second set of middle components
         GridBagConstraints right2 = new GridBagConstraints();
         right2.gridx = 2;
         right2.gridy = 1;
         input2 = new JTextField(10);
 
+        //add all the components to the frame
         add(usd, left1);
         add(input1, left2);
         add(convert, middle1);
