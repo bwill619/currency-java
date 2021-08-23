@@ -49,7 +49,7 @@ public class window extends JFrame {
                 
                 double d1 = Double.parseDouble(input1.getText());
 
-                double sum = (d1 * (.85));
+                double sum = (d1 * (0.85336));
                 String st = String.valueOf(sum);
                 input2.setText(st);
             }
@@ -67,7 +67,7 @@ public class window extends JFrame {
 
                 double d2 = Double.parseDouble(input2.getText());
 
-                double sum = (d2 * (1.17));
+                double sum = (d2 * (1.17184 ));
                 String st = String.valueOf(sum);
                 input1.setText(st);
             }
